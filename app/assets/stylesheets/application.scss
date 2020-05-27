@@ -15,3 +15,25 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+header{
+	color: white;
+
+	span{
+		padding-top: 10px;
+	}
+	a{
+		padding-left: 10px;
+		color: white;
+	}
+	li{
+		padding-right: 20px;
+	}
+	}
+
+.left-header{
+	font-size: 20px;
+}
+
+
+
