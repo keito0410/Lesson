@@ -1,0 +1,20 @@
+<%= render 'users/list', book:@book %>
+<div class="col-xs-9">
+<h2>Books</h2>
+<table class="table">
+	<thead>
+		<tr>
+			<th>title</th>
+			<th>body</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @books.each do |book| %>
+		<tr>
+			<td><%= book.title %></td>
+			<td><%= book.body %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+</div>
