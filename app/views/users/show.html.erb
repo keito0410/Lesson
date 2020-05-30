@@ -3,12 +3,16 @@
 <table class="table table-hover table-inverse">
 	<thead>
 		<tr>
-			<th>header</th>
+			<th>Title</th>
+			<th>Option</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>data</td>
+			<% current_user.books.each do |current_user_book| %>
+			<td><%= current_user_book.title %></td>
+			<td><%= current_user_book.body %></td>
+			<% end %>
 		</tr>
 	</tbody>
 </table>
